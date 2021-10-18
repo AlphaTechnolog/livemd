@@ -1,23 +1,17 @@
-import Editor from "@monaco-editor/react"
+import TextEditor from './components/TextEditor'
+import Preview from './components/Preview'
+import {useEditor} from './hooks/useEditor'
 
 const App = () => {
+  const [renderedMarkdown, handleEditorChange] = useEditor()
+
   return (
     <>
       <div className="container">
-        <div>
-          <Editor
-            theme='vs-dark'
-            defaultLanguage='markdown'
-            language='markdown'
-            defaultValue='# Some markdown content'
-            height='100vh'
-          />
-        </div>
+        <TextEditor handleEditorChange={handleEditorChange} />
       </div>
       <div className="container">
-        <div>
-          <h1>Hello 2</h1>
-        </div>
+        <Preview renderedMarkdown={renderedMarkdown} />
       </div>
     </>
   )
