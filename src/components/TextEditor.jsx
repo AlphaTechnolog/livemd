@@ -10,6 +10,7 @@ const TextEditor = ({handleEditorChange}) => {
         defaultValue='# Some markdown content'
         theme='vs-dark'
         height='100vh'
+        onMount={() => handleEditorChange('# Some markdown content')}
       />
     </div>
   )
