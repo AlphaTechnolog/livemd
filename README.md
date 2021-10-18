@@ -2,6 +2,8 @@
 
 A live markdown text editor with a vscode based integrated editor.
 
+**NOTE**: This app is in development!
+
 ## Getting started
 
 First, clone the project:
