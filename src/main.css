@@ -1,0 +1,38 @@
+html, body {
+  height: 100%;
+  background-color: #000;
+  overflow: hidden;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+}
+
+.container {
+  width: 50%;
+  min-height: 100vh;
+  background-color: #fff;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+@media only screen 
+  and (device-width : 375px) 
+  and (device-height : 812px) 
+  and (-webkit-device-pixel-ratio : 3) {
+  html, body {
+    overflow: scroll;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+  }
+  .container > div {
+    flex: 1;
+    display: flex;
+  }
+}
