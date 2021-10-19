@@ -1,6 +1,10 @@
-import Editor from '@monaco-editor/react'
+import Editor, { useMonaco } from '@monaco-editor/react'
+import {useEffect} from 'react'
+import { useMonacoTheme } from '../hooks/useMonacoTheme'
 
 const TextEditor = ({handleEditorChange}) => {
+  useMonacoTheme()
+
   return (
     <div>
       <Editor

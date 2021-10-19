@@ -2,7 +2,7 @@ import ReactHtmlParser from 'react-html-parser'
 
 const Preview = ({renderedMarkdown}) => {
   return (
-    <div class='preview-container'>
+    <div className='preview-container'>
       {ReactHtmlParser(renderedMarkdown)}
     </div>
   )
