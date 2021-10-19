@@ -17,7 +17,7 @@ export const useMonacoTheme = (handleEditorChange) => {
 
   const handleDidMount = (editor) => {
     handleEditorChange('# Some markdown content')
-    editor.updateOptions({ fontFamily: 'SauceCodePro Nerd Font, CaskaydiaCove NF, Fira Code Nerd Font, Fira Code iCursive S12, Fira Code iCursive Op, UbuntuMono Nerd Font, Mononoki Nerd Font, CodeNewRoman NF, monospace', fontSize: 20 })
+    editor.updateOptions({ fontFamily: 'SauceCodePro Nerd Font, CaskaydiaCove NF, Fira Code Nerd Font, Fira Code iCursive S12, Fira Code iCursive Op, UbuntuMono Nerd Font, Mononoki Nerd Font, CodeNewRoman NF, monospace', fontSize: 16 })
   }
 
   return [handleDidMount]
