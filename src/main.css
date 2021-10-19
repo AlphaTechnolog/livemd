@@ -45,13 +45,13 @@ html, body {
   overflow-y: scroll;
   margin: 0;
   padding: 0 0.5rem 0 0.5rem;
-  background-color: #0c0c1f;
-  color: #B0BEC5;
+  background-color: #1a1b26;
+  color: #a9b1d6;
   font-family: Helvetica, sans-serif;
 }
 
 .preview-container code {
   font-family: SauceCodePro Nerd Font, CaskaydiaCove NF, Fira Code Nerd Font, Fira Code iCursive S12, Fira Code iCursive Op, UbuntuMono Nerd Font, Mononoki Nerd Font, CodeNewRoman NF, monospace;
-  font-size: 16px;
-  color: #82AAFF;
+  font-size: 20px;
+  color: #7AA2F7;
 }
