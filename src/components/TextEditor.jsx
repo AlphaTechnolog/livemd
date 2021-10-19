@@ -1,9 +1,8 @@
-import Editor, { useMonaco } from '@monaco-editor/react'
-import {useEffect} from 'react'
+import Editor from '@monaco-editor/react'
 import { useMonacoTheme } from '../hooks/useMonacoTheme'
 
 const TextEditor = ({handleEditorChange}) => {
-  useMonacoTheme()
+  const [handleDidMount] = useMonacoTheme(handleEditorChange)
 
   return (
     <div>
@@ -14,7 +13,7 @@ const TextEditor = ({handleEditorChange}) => {
         defaultValue='# Some markdown content'
         theme='vs-dark'
         height='100vh'
-        onMount={() => handleEditorChange('# Some markdown content')}
+        onMount={handleDidMount}
       />
     </div>
   )

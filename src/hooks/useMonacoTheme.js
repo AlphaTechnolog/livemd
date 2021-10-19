@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useMonaco } from '@monaco-editor/react'
 
-export const useMonacoTheme = () => {
+export const useMonacoTheme = (handleEditorChange) => {
   const monaco = useMonaco()
 
   useEffect(() => {
@@ -15,5 +15,10 @@ export const useMonacoTheme = () => {
     }
   }, [monaco])
 
-  return [monaco]
+  const handleDidMount = (editor) => {
+    handleEditorChange('# Some markdown content')
+    editor.updateOptions({ fontFamily: 'SauceCodePro Nerd Font', fontSize: 20 })
+  }
+
+  return [handleDidMount]
 }
