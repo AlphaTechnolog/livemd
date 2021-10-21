@@ -1,4 +1,5 @@
 import Editor from '@monaco-editor/react'
+import TextEditorPreloader from './TextEditorPreloader'
 import { useMonacoTheme } from '../hooks/useMonacoTheme'
 
 const TextEditor = ({handleEditorChange}) => {
@@ -14,6 +15,7 @@ const TextEditor = ({handleEditorChange}) => {
         theme='vs-dark'
         height='100vh'
         onMount={handleDidMount}
+        loading={<TextEditorPreloader />}
       />
     </div>
   )
