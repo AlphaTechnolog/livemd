@@ -129,7 +129,7 @@
     "editor.selectionBackground": "#6600ec59",
     "editor.lineHighlightBackground": "#17173d",
     "editorCursor.foreground": "#9e9edf",
-    "editorWhitespace.foreground": "#17173d",
+    "editorWhitespace.foreground": "#9e9edf",
     "editorIndentGuide.activeBackground": "#0c0c1f",
     "editor.selectionHighlightBorder": "#9e9edf"
   }

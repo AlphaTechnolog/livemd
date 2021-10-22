@@ -1,6 +1,29 @@
+/** Variables **/
+:root {
+  /** Tokyonight Storm
+  --black: #000;
+  --bright-foreground: #fff;
+  --preview-foreground: #a9b1d6;
+  --preview-background: #1a1b26;
+  --preview-darker-background: #111119;
+  --preview-code: #7AA2F7;
+  --preview-blockquote-border-left-color: #e2bf31;
+  **/
+
+  /** Calvera Dark **/
+  --black: #000;
+  --bright-foreground: #fff;
+  --preview-foreground: #B0BEC5;
+  --preview-background: #0c0c1f;
+  --preview-darker-background: #111119;
+  --preview-code: #7878E7;
+  --preview-blockquote-border-left-color: #7878E7;
+}
+
+/** Styles **/
 html, body {
   height: 100%;
-  background-color: #000;
+  background-color: var(--black);
   overflow: hidden;
   margin: 0;
 }
@@ -12,7 +35,7 @@ html, body {
 .container {
   width: 50%;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: var(--bright-foreground);
   display: inline-block;
   box-sizing: border-box;
 }
@@ -45,24 +68,32 @@ html, body {
   overflow-y: scroll;
   margin: 0;
   padding: 0 0.5rem 0 0.5rem;
-  background-color: #1a1b26;
-  color: #a9b1d6;
+  background-color: var(--preview-background);
+  color: var(--preview-foreground);
   font-family: Helvetica, sans-serif;
 }
 
 .preview-container code {
   font-family: SauceCodePro Nerd Font, CaskaydiaCove NF, Fira Code Nerd Font, Fira Code iCursive S12, Fira Code iCursive Op, UbuntuMono Nerd Font, Mononoki Nerd Font, CodeNewRoman NF, monospace;
   font-size: 16px;
-  color: #7AA2F7;
+  color: var(--preview-code);
 }
 
 .editor-preloader-container {
-  background: #1a1b26;
-  color: #a9b1d6;
+  background: var(--preview-background);
+  color: var(--preview-foreground);
   height: 100vh;
   width: 100%;
   display: grid;
   place-content: center;
   font-family: SauceCodePro Nerd Font, CaskaydiaCove NF, Fira Code Nerd Font, Fira Code iCursive S12, Fira Code iCursive Op, UbuntuMono Nerd Font, Mononoki Nerd Font, CodeNewRoman NF, monospace;
   font-size: 16px;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0.1rem 1rem;
+  background: #111119;
+  border-radius: 5px;
+  border-left: solid var(--preview-blockquote-border-left-color);
 }

@@ -3,83 +3,86 @@
   "inherit": false,
   "rules": [
     {
-      "background": "0c0c1f",
+      "background": "1a1b26",
       "token": ""
     },
     {
-      "foreground": "9e9edf",
+      "foreground": "a9b1d6",
       "token": ""
     },
     {
-      "foreground": "adcea1",
+      "foreground": "9ECE6A",
       "token": "string"
     },
     {
-      "foreground": "dbb987",
+      "foreground": "FF9E64",
       "token": "constant.numeric"
     },
     {
-      "foreground": "dbb987",
+      "foreground": "FF9E64",
       "token": "constant.language"
     },
     {
-      "foreground": "dbb987",
+      "foreground": "BB9AF7",
       "token": "constant.character"
     },
     {
-      "foreground": "dbb987",
+      "foreground": "F7768E",
       "token": "constant.other"
     },
     {
-      "foreground": "82AAFF",
+      "foreground": "0DB9D7",
       "token": "keyword"
     },
     {
-      "foreground": "6977f3",
+      "foreground": "BB9AF7",
       "token": "storage"
     },
     {
-      "foreground": "6977f3",
+      "foreground": "BB9AF7",
+      "fontStyle": "italic",
       "token": "storage.type"
     },
     {
-      "foreground": "d6b295",
+      "foreground": "a9b1d6",
       "token": "entity.name.class"
     },
     {
-      "foreground": "adcea1",
+      "foreground": "a9b1d6",
       "token": "entity.other.inherited-class"
     },
     {
-      "foreground": "82AAFF",
+      "foreground": "7AA2F7",
       "token": "entity.name.function"
     },
     {
-      "foreground": "dbb987",
+      "foreground": "E0AF68",
       "token": "variable.parameter"
     },
     {
-      "foreground": "82AAFF",
+      "foreground": "DE5971",
       "token": "entity.name.tag"
     },
     {
-      "foreground": "a991eb",
+      "foreground": "9ECE6A",
       "token": "entity.other.attribute-name"
     },
     {
-      "foreground": "82AAFF",
+      "foreground": "0DB9D7",
       "token": "support.function"
     },
     {
-      "foreground": "dbb987",
+      "foreground": "0DB9D7",
       "token": "support.constant"
     },
     {
-      "foreground": "d6b295",
+      "foreground": "0DB9D7",
+      "fontStyle": "italic",
       "token": "support.type"
     },
     {
-      "foreground": "d6b295",
+      "foreground": "5A638C",
+      "fontStyle": "italic",
       "token": "support.class"
     },
     {
@@ -87,11 +90,11 @@
       "token": "invalid"
     },
     {
-      "foreground": "FF5370",
+      "foreground": "BB9AF7",
       "token": "invalid.deprecated"
     },
     {
-      "foreground": "C792EA",
+      "foreground": "7AA2F7",
       "token": "meta.structure.dictionary.json string.quoted.double.json"
     },
     {
@@ -103,34 +106,34 @@
       "token": "meta.diff.header"
     },
     {
-      "foreground": "FF5370",
+      "foreground": "914C54",
       "token": "markup.deleted"
     },
     {
-      "foreground": "C3E88D",
+      "foreground": "449DAB",
       "token": "markup.inserted"
     },
     {
-      "foreground": "C792EA",
+      "foreground": "6183BB",
       "token": "markup.changed"
     },
     {
-      "foreground": "dbb987",
+      "foreground": "444B6A",
       "token": "constant.numeric.line-number.find-in-files - match"
     },
     {
-      "foreground": "d6b295",
+      "foreground": "444B6A",
       "token": "entity.name.filename.find-in-files"
     }
   ],
   "colors": {
-    "editor.foreground": "#9e9edf",
-    "editor.background": "#0c0c1f",
-    "editor.selectionBackground": "#6600ec59",
-    "editor.lineHighlightBackground": "#17173d",
-    "editorCursor.foreground": "#9e9edf",
-    "editorWhitespace.foreground": "#17173d",
-    "editorIndentGuide.activeBackground": "#0c0c1f",
-    "editor.selectionHighlightBorder": "#9e9edf"
+    "editor.foreground": "#a9b1d6",
+    "editor.background": "#1a1b26",
+    "editor.selectionBackground": "#515c7e",
+    "editor.lineHighlightBackground": "#1a1b26",
+    "editorCursor.foreground": "#c0caf5",
+    "editorWhitespace.foreground": "#363b54",
+    "editorIndentGuide.activeBackground": "#363b54",
+    "editor.selectionHighlightBorder": "#515c7e"
   }
 }
