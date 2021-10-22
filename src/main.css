@@ -97,3 +97,7 @@ blockquote {
   border-radius: 5px;
   border-left: solid var(--preview-blockquote-border-left-color);
 }
+
+img {
+  max-width: 100%;
+}
